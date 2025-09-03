@@ -2,7 +2,7 @@
 
 ##…or create a new repository on the command line
 
-1.echo "# Learning-Airflow-Begining" >> README.md
+#.echo "# Learning-Airflow-Begining" >> README.md
 2.git init
 3.git add README.md
 4.git commit -m "first commit"
