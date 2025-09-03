@@ -16,3 +16,11 @@
 1. git remote add origin https://github.com/MonkeyNerdCoding/Learning-Airflow-Begining.git
 2. git branch -M main
 3. git push -u origin main
+
+## Remove the file that we don't need to add when push 
+1. git reset venv
+
+## Python 
+
+1. python -m .venv venv
+2. ./.venv/Scripts/Activate.ps1
