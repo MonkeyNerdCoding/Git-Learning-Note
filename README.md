@@ -47,3 +47,23 @@
 
 ```bash
 yt-dlp --write-subs --sub-format srt --sub-lang en,vi --convert-subs srt -f mp4 <link_video>
+
+👉 Trong đó:
+--write-subs → tải phụ đề.
+--sub-format srt → định dạng SRT.
+--sub-lang en,vi → tải phụ đề tiếng Anh + tiếng Việt (có thể thay theo ngôn ngữ bạn muốn).
+--convert-subs srt → chuyển phụ đề về dạng .srt.
+-f mp4 → tải video định dạng mp4.
+
+```
+
+🔎 Lệnh check xem video đó có sub nào
+```bash
+yt-dlp --list-subs
+
+```
+👉 Nếu nó thể hiện no sub thì dùng lệnh bên dưới:
+```bash
+yt-dlp --write-auto-subs --sub-lang en --sub-format srt --convert-subs srt -f mp4 https://www.youtube.com/watch?v=vMgFadPxOLk
+
+
