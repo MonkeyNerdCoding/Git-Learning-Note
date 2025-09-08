@@ -32,6 +32,13 @@
 
 ---
 
+## After push 
+1. git add .
+2. git commit -m ""
+3. git push
+
+---
+
 ## 🗑️ Remove the file that we don't need to add when push 
 
 1. ♻️ git reset venv  
