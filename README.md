@@ -37,6 +37,8 @@
 2. git commit -m ""
 3. git push
 
+---
+
 ### Merge and Pull
 ````markdown
 ### 1. Merge (giữ lịch sử merge):
