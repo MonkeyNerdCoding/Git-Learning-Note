@@ -37,6 +37,33 @@
 2. git commit -m ""
 3. git push
 
+### Merge and Pull
+````markdown
+### 1. Merge (giữ lịch sử merge):
+```bash
+git pull --no-rebase origin main
+````
+
+### 2\. Rebase (lịch sử thẳng, commit của bạn sẽ nằm trên commit mới nhất của remote):
+
+```bash
+git pull --rebase origin main
+```
+
+Sau khi `pull` thành công (dù `merge` hay `rebase`), bạn chỉ cần:
+
+```bash
+git push -u origin main
+```
+
+```
+Bạn có thể giữ nguyên nội dung mặc định (hoặc chỉnh lại nếu muốn).
+Nhấn Ctrl + O (Write Out) để lưu file.
+Nhấn Enter để xác nhận tên file.
+Nhấn Ctrl + X để thoát nano.
+
+```
+
 ---
 
 ## 🗑️ Remove the file that we don't need to add when push 
