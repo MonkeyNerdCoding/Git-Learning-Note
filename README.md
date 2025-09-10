@@ -41,7 +41,6 @@
 
 ## Merge and Pull
 ### 1. Merge (giữ lịch sử merge):
-````markdown
 ```bash
 git pull --no-rebase origin main
 ````
