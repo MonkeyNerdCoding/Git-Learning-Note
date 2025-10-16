@@ -9,6 +9,106 @@
 
 ---
 
+Dưới đây là phần hướng dẫn được viết lại **chuẩn dạng README.md** cho GitHub — rõ ràng, dễ hiểu và copy vào file `README.md` là đẹp ngay 👇
+
+---
+
+````markdown
+# 🚀 Hướng dẫn khởi tạo Project với Git & GitHub
+
+Tài liệu này hướng dẫn cách khởi tạo và đẩy (push) project từ máy local lên GitHub, áp dụng cho cả hai trường hợp:  
+1️⃣ Bắt đầu từ **project có sẵn trong máy**  
+2️⃣ Bắt đầu từ **repo GitHub có sẵn**
+
+---
+
+## 💡 Trường hợp 1: Bắt đầu từ Local Project
+
+> Khi bạn đã có sẵn project trong máy và muốn đưa lên GitHub.
+
+### Các bước thực hiện:
+
+```bash
+# 1. Mở terminal trong thư mục project
+git init
+
+# 2. Thêm toàn bộ file vào vùng staging
+git add .
+
+# 3. Tạo commit đầu tiên
+git commit -m "Initial commit"
+
+# 4. Tạo repository trống trên GitHub (ví dụ: myproject)
+#    rồi kết nối local repo với GitHub repo
+git remote add origin https://github.com/username/myproject.git
+
+# 5. Đặt nhánh chính là main
+git branch -M main
+
+# 6. Đẩy code lên GitHub
+git push -u origin main
+````
+
+✅ **Kết quả:** Project local của bạn đã được đẩy lên GitHub thành công.
+
+---
+
+## 💡 Trường hợp 2: Bắt đầu từ Repo GitHub
+
+> Khi bạn tạo repo trước trên GitHub và muốn clone về để làm việc.
+
+### Các bước thực hiện:
+
+```bash
+# 1. Clone repo từ GitHub về máy
+git clone https://github.com/username/myproject.git
+
+# 2. Di chuyển vào thư mục project
+cd myproject
+
+# 3. Thực hiện code, thêm file mới...
+
+# 4. Thêm và commit thay đổi
+git add .
+git commit -m "First commit"
+
+# 5. Đẩy code lên GitHub
+git push
+```
+
+✅ **Kết quả:** Code mới được cập nhật lên GitHub.
+
+---
+
+## 📘 Tóm tắt nhanh
+
+| Tình huống      | Bắt đầu từ Local Project             | Bắt đầu từ GitHub Repo       |
+| --------------- | ------------------------------------ | ---------------------------- |
+| Khi nào dùng    | Có sẵn code trong máy                | Làm việc với repo có sẵn     |
+| Bước đầu tiên   | `git init`                           | `git clone`                  |
+| Thứ tự thao tác | Commit local → Kết nối GitHub → Push | Clone → Code → Commit → Push |
+
+---
+
+## 💬 Gợi ý
+
+* Dùng `git status` để kiểm tra trạng thái file.
+* Dùng `git log` để xem lịch sử commit.
+* Dùng `git pull` để cập nhật thay đổi mới nhất từ GitHub.
+* Dùng `.gitignore` để loại bỏ file không cần theo dõi (VD: venv, node_modules, .DS_Store, ...).
+
+---
+
+✳️ **Tips:** Nếu đây là lần đầu bạn đẩy code lên GitHub, đảm bảo bạn đã đăng nhập Git bằng token hoặc SSH key.
+
+```
+
+---
+
+Bạn muốn tôi thêm phần **hướng dẫn tạo `.gitignore`** chuẩn cho Python (hoặc Web project) vào cuối README luôn không?
+```
+
+
 ## 🆕 …or create a new repository on the command line
 
 1.  echo "# Learning-Airflow-Begining" >> README.md  
