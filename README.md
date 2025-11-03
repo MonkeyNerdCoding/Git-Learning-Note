@@ -7,11 +7,6 @@
 - [🐍 Python](#-python)
 - [🎬 Tải Video yt-dlp](#-tải-video-yt-dlp)
 
----
-
-Dưới đây là phần hướng dẫn được viết lại **chuẩn dạng README.md** cho GitHub — rõ ràng, dễ hiểu và copy vào file `README.md` là đẹp ngay 👇
-
----
 
 ````markdown
 # 🚀 Hướng dẫn khởi tạo Project với Git & GitHub
